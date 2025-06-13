@@ -14,10 +14,10 @@ suite('Functional Tests', function () {
       chai
         .request(server)
         .keepOpen()
-        .get('/hello')
+        .get('/hello?name=John')
         .end(function (err, res) {
-          assert.fail(res.status, 200);
-          assert.fail(res.text, 'hello Guest');
+          assert.equal(res.status, 200, 'Response status should be 200');
+          assert.equal(res.text, 'hello John', 'Response text should be "hello John"');
           done();
         });
     });
