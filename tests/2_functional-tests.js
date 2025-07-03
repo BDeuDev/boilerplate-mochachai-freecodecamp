@@ -40,7 +40,8 @@ suite('Functional Tests', function () {
         .keepOpen()
         .put('/travellers')
         .send({
-          "surname": "Colombo"
+          "surname": "Colombo",
+          "name": "Cristoforo"
         })
         .end(function (err, res) {
           assert.equal(res.status, 200);
