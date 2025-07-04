@@ -108,9 +108,9 @@ suite('Functional Tests with Zombie.js', function () {
 
         browser.assert.success();
         browser.assert.text('span#name', 'Cristoforo');
-        browser.assert.element('span#dates', 1);
         browser.assert.text('span#surname', 'Colombo');
-        
+        browser.assert.element('span#dates', 1);
+
         done();
       });
     });
