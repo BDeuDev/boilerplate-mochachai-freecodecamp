@@ -84,7 +84,7 @@ suite('Functional Tests', function () {
 
 const Browser = require('zombie');
 
-Browser.site = 'http://localhost:3000';
+Browser.site = 'https://boilerplate-mochachai-freecodecamp-bywt.onrender.com';
 const browser = new Browser();
 
 suite('Functional Tests with Zombie.js', function () {
